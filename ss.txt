@@ -1,0 +1,75 @@
+//without safearea
+import 'package:flutter/material.dart';
+void main() {
+  runApp(MaterialApp(
+    home: Text(
+      'WITHOUT-SAFEAREA',
+      textAlign: TextAlign.center,
+      style: TextStyle(
+        fontSize: 40,
+        fontStyle: FontStyle.normal,
+        fontWeight: FontWeight.w800,
+        color: Colors.blueAccent,
+      ),
+    ),
+  ));
+}
+//usage of safearea
+/*import 'package:flutter/material.dart';
+void main() {
+  runApp(MaterialApp( home: SafeArea(
+    child: Text(
+      'WITH SAFEAREA', textAlign: TextAlign.center, style: TextStyle(
+      fontSize: 40,
+      fontWeight: FontWeight.w800,
+      color: Colors.blueAccent, ),
+    ), ),
+  )); }
+  */
+
+//scaffold
+
+/*import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+void main() {
+  runApp(MaterialApp(
+    home: Scaffold(
+      appBar: AppBar(
+        title: Text("Scaffold usage"),
+      ), body:
+    Center(
+      child: Text('Scaffold Usage',
+        style: TextStyle( fontSize:
+        40.0, fontStyle:
+        FontStyle.italic, fontWeight:
+        FontWeight.bold,
+        ),),
+    ),
+    ),
+  ));
+}*/
+
+//scaffold and safearea
+
+/*import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
+void main() {
+  runApp(MaterialApp(
+    home: Scaffold(
+      appBar: AppBar(
+        title: Text("Scaffold Safe Area usage"),
+      ), body:
+    Container( child:
+    SafeArea( child:
+    Center( child:
+    Text(
+      'This is using Scaffold SafeArea', style: TextStyle( fontSize:
+      35.0, fontWeight: FontWeight.bold,
+    ),
+    ),),
+    ),
+    ),
+  ),
+  )) ;
+}*/
