@@ -6,13 +6,13 @@ void main() { runApp(MaterialApp(
   ),
   ),
 )); } class Question {
-  final String questionText; // Question
-  final bool answer; // Answer
+  final String questionText; 
+  final bool answer; 
   Question({required this.questionText, required this.answer});
-// making it as named arguments for the Question Constructor
+
 } class Questions {
-  List<Question> questionBank = [ // create a list of Questions using default
-    Question(questionText: "Rainbow has 10 colours", answer: false), // set the
+  List<Question> questionBank = [ 
+    Question(questionText: "Rainbow has 10 colours", answer: false), 
    
     Question(questionText: " Director of RRR is Rajamouli ", answer: true), Question(questionText: " Black box in plane isblack ", answer: true), Question(questionText: " Mango is a fruit ", answer: true),
         Question(questionText: " Mumbai is the capital of India ", answer: false),
@@ -55,13 +55,13 @@ class _QuizPageState extends State<QuizPage> {
     if (checkquestionNumber(questionNumber)) ElevatedButton(
       onPressed: () {
         setState(() {
-          if (questionNumber == questions.questionBank.length) { //
+          if (questionNumber == questions.questionBank.length) { 
 
             print("End of questions");
           } else {
-// check the user answer against the answer in the list
+
             updateCurrentScore(true, questionNumber);
-// increment the Question Number
+
             updateQuestionNumber();
           }
         }); }, child:
@@ -69,13 +69,13 @@ class _QuizPageState extends State<QuizPage> {
     if (checkquestionNumber(questionNumber)) ElevatedButton(
       onPressed: () {
         setState(() {
-          if (questionNumber == questions.questionBank.length) { //
+          if (questionNumber == questions.questionBank.length) { 
 
             print("End of questions");
           } else {
-// check the user answer against the answer in the list
+
             updateCurrentScore(false, questionNumber);
-// increment the Question Number
+
             updateQuestionNumber();
           }
         }); }, child:
